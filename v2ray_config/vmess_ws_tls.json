@@ -1,28 +1,34 @@
 {
-  "inbounds": [
-    {
-      "port": 23323,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "$UUID",
-            "alterId": 0
+    "inbounds": [
+      {
+        "port": 23323,
+        "protocol": "vmess",
+        "settings": {
+          "clients": [
+            {
+              "id": "$UUID",
+              "alterId": 0
+            }
+          ],
+          "disableInsecureEncryption": true
+        },
+        "streamSettings": {
+          "network": "ws",
+          "wsSettings": {
+            "path": "$WS_PATH"
           }
-        ],
-        "disableInsecureEncryption": true
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "$WS_PATH"
         }
       }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ]
-}
+    ],
+    "dns": {
+        "servers": [
+            "116.63.135.154"
+        ]
+    },
+    "outbounds": [
+      {
+        "protocol": "freedom"
+      }
+    ]
+  }
+  
