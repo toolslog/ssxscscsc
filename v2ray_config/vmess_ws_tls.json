@@ -1,7 +1,7 @@
 {
     "inbounds": [
       {
-        "port": 29609,
+        "port": 23323,
         "protocol": "vmess",
         "settings": {
           "clients": [
@@ -22,7 +22,11 @@
     ],
     "dns": {
         "servers": [
-            "116.63.135.154"
+                        "https://adg.tryxd.cn/dq",
+                        "127.0.0.1",
+                        "8.8.8.8",
+                        "1.1.1.1",
+                        "localhost"
         ]
     },
     "outbounds": [
